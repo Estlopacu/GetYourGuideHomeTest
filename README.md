@@ -22,16 +22,16 @@ In order to view the site locally, run the following command:
 npm start
 ```
 
-## Features
- - When the site initially loads, special offers will be available for the client to get the attention on the site.
+## Features to help customers
+ - When the site initially loads, special offers will be available for the customers to get the attention on the site.
 
- - The banner with the legend "See Our Specials Offers" will show and will be animated on the initial load to get the attention of the user.
+ - The banner with the legend "See Our Specials Offers" will show and will be animated on the initial load to get the attention of the customers.
 
- - All searches are showing in order, first the Special Offers so the client will have the best offer beforehand.
+ - All searches are showing in order, first the Special Offers so the customers will have the best offer beforehand.
 
- - When a search is not returning any activities, a banner with the legend "No results available, but take a look at this Specials Offers." will display and showing the special offers. This helps the client be aware of other options.
+ - When a search is not returning any activities, a banner with the legend "No results available, but take a look at this Specials Offers." will display and showing the special offers. This helps the customers be aware of other options.
 
- - The background image will be different each time the site loads, this will get the user attention on activities to do.
+ - The background image will be different each time the site loads, this will get the customers attention on activities to do.
 
 ## Why the technologies used
 
