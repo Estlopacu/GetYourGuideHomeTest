@@ -1,0 +1,45 @@
+@import "variables.scss";
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~open-iconic/font/css/open-iconic-bootstrap.css";
+
+.navbar {
+  background-color: $brand-primary;
+
+  .navbar-brand {
+    color: $text-color;
+  }
+}
+
+.header {
+    background: url(http://jlctravelandtours.com/wp-content/uploads/2014/01/jlc-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+
+    > div {
+      background-color: rgba(255, 255, 255, 0.46);
+      margin: 5% 0;
+    }
+}
+
+.badge {
+  background-color: $brand-secondary;
+  width: 110px;
+  display: block;
+}
+
+.card {
+  border-left: 4px solid $text-color;
+  background-color: #FCF7F8;
+}
+
+.alert {
+  background-color: #F5BB00;
+  color: $white;
+
+  &--noResults {
+    background-color: #482728;
+  }
+}
+
+.oi-star{
+  color: #F5BB00;
+}
