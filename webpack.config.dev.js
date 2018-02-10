@@ -6,13 +6,13 @@ export default {
   devtool: 'inline-source-map',
   noInfo: false,
   entry: [
-    'eventsource-polyfill', // necessary for hot reloading with IE
-    'webpack-hot-middleware/client?reload=true', //note that it reloads the page if hot module reloading fails.
+    'eventsource-polyfill',
+    'webpack-hot-middleware/client?reload=true',
     path.resolve(__dirname, 'src/index')
   ],
   target: 'web',
   output: {
-    path: __dirname + '/dist', // Note: Physical files are only output by the production build task `npm run build`.
+    path: __dirname + '/dist',
     publicPath: '/',
     filename: 'bundle.js'
   },
@@ -29,6 +29,7 @@ export default {
       { test: /\.json$/, loader: 'json' },
       {test: /(\.css)$/, loaders: ['style', 'css']},
       {test: /(\.scss)$/, loaders: ['style', 'css', 'sass']},
+      {test: /\.(jpg)$/, loader: 'file', options: { limit: 8000, name: 'src/static/img/[name].[ext]'}},
       {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file'},
       {test: /\.otf(\?v=\d+\.\d+\.\d+)?$/, loader: "file-loader"},
       {test: /\.(woff|woff2)$/, loader: 'url?prefix=font/&limit=5000'},

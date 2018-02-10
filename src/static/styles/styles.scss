@@ -1,0 +1,12 @@
+@import "variables.scss";
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~open-iconic/font/css/open-iconic-bootstrap.css";
+
+.navbar {
+  background-color: $brand-primary;
+
+  .navbar-brand {
+    color: $text-color;
+  }
+}
+

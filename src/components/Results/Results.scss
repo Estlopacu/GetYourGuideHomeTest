@@ -1,0 +1,40 @@
+@import "../../static/styles/variables.scss";
+
+.badge {
+    background-color: $brand-secondary;
+    width: 110px;
+    display: block;
+  }
+  
+.card {
+    border-left: 4px solid $text-color !important;
+    background-color: $white !important;
+}
+  
+.alert {
+    background-color: #F5BB00;
+    color: $white;
+
+    &---specialOffers {
+        animation: grow 1s linear 1s;
+    }
+
+    &--noResults {
+        background-color: $brand-secondary;
+    }
+}
+  
+.oi-star{
+    color: $stars-color;
+}
+
+.card--price {
+    font-size: 1.5rem;
+    color: $brand-secondary;
+}
+
+// Animations
+@keyframes grow {
+    50% { transform: scale3d(1.01, 1.01, 1.01)}
+    10% { transform: scale3d(0.98, 0.98, 0.98)}
+}

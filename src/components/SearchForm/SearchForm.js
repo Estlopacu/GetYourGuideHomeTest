@@ -22,7 +22,7 @@ class SearchForm extends React.Component {
     this.props.dispatch(search({
       searchText: fieldValue,
       searchResults: searchResults.length ? searchResults : searchEndpoint.getSpecialOffers(),
-      searchEnable: true,
+      searchEnable: !!fieldValue,
       searchFound: !!searchResults.length
     }));
   }
